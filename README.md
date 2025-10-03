@@ -5,7 +5,7 @@ From here you can navigate to all related modules:
 
 ## 🔗 Repositories
 - [About MediBridge](#-about-medibridge-ultrasound-suite)
-- [Purpose](#-purpose)
+  - [Purpose](#-purpose)
   - [Key Features](#-key-features)
   - [Target Users](#-target-users)
   - [System Overview](#-system-overview)
@@ -54,7 +54,7 @@ MediBridge was created to:
 
 ---
 
-## 👩‍⚕️ Target Users
+## 👩‍⚕️ Target users
 - **Clinicians**: Urologists, surgeons, and radiologists  
 - **Application Specialists**: Supporting installation, training, and optimization  
 - **Healthcare IT**: Ensuring integration and compliance with standards  
@@ -122,7 +122,7 @@ sequenceDiagram
     Cloud-->>Clinician: Review case, add notes, finalize report
     Cloud->>Clinician: Share link or push to PACS/EHR (as configured)
 ```
-## 👨‍⚕️ Typical Clinical Workflow
+## 👨‍⚕️ Typical clinical workflow
 This flowchart shows a typical reporting workflow from login to final report:
 
 ```mermaid
