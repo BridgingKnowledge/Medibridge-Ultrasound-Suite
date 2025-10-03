@@ -1,3 +1,17 @@
+# 📚 MediBridge Documentation Hub
+
+Welcome to the MediBridge Ultrasound Suite documentation.  
+From here you can navigate to all related modules:
+
+## 🔗 Repositories
+- [About MediBridge](#-about-medibridge-ultrasound-suite)
+- [MediBridge Training](https://github.com/BridgingKnowledge/medibridge-training)
+  - [Clinicians](https://github.com/BridgingKnowledge/medibridge-training-clinicians)
+  - [Specialists](https://github.com/BridgingKnowledge/medibridge-training-specialists)
+  - [Developers](https://github.com/BridgingKnowledge/medibridge-training-developers)
+- [MediBridge Troubleshooting](https://github.com/BridgingKnowledge/medibridge-troubleshooting)
+
+---
 # 🩺 About MediBridge Ultrasound Suite
 
 The **MediBridge Ultrasound Suite** is a fictional medtech solution designed to demonstrate how complex systems can be made **relatable, structured, and valuable** for clinicians, specialists, and healthcare providers.  
@@ -8,19 +22,7 @@ It combines:
 - **Cloud Application**: Secure platform for sharing images, reports, and training material across teams  
 
 ---
-# 📚 MediBridge Documentation Hub
 
-Welcome to the MediBridge Ultrasound Suite documentation.  
-From here you can navigate to all related modules:
-
-## 🔗 Repositories
-- [About MediBridge](https://github.com/BridgingKnowledge/Medibridge-Ultrasound-Suite)
-- [MediBridge Training](https://github.com/BridgingKnowledge/medibridge-training)
-  - [Clinicians](https://github.com/BridgingKnowledge/medibridge-training-clinicians)
-  - [Specialists](https://github.com/BridgingKnowledge/medibridge-training-specialists)
-  - [Developers](https://github.com/BridgingKnowledge/medibridge-training-developers)
-- [MediBridge Troubleshooting](https://github.com/BridgingKnowledge/medibridge-troubleshooting)
----
 ## 🎯 Purpose
 MediBridge was created to:
 - Support clinicians with faster, more accurate diagnostics  
