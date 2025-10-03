@@ -7,11 +7,11 @@ From here you can navigate to all related modules:
 - [About MediBridge](#-about-medibridge-ultrasound-suite)
   - [Purpose](#-purpose)
   - [Key Features](#-key-features)
-  - [Target Users](#-target-users)
+  - [Target Users](#target-users)
   - [System Overview](#-system-overview)
   - [Detailed Architecture](#-detailed-architecture)
   - [Data Flow](#-data-flow)
-  - [Typical Clinical Workflow](#-typical-clinical-workflow)
+  - [Typical Clinical Workflow](#typical-clinical-workflow)
 
 - [MediBridge Training](https://github.com/BridgingKnowledge/medibridge-training)
   - [Purpose](https://github.com/BridgingKnowledge/medibridge-training#-purpose)
@@ -54,11 +54,11 @@ MediBridge was created to:
 
 ---
 
-## 👩‍⚕️ Target users
-- **Clinicians**: Urologists, surgeons, and radiologists  
-- **Application Specialists**: Supporting installation, training, and optimization  
-- **Healthcare IT**: Ensuring integration and compliance with standards  
-- **Developers**: Extending functionality, building integrations, and maintaining APIs  
+<h2 id="target-users">👩‍⚕️ Target users</h2>
+  - **Clinicians**: Urologists, surgeons, and radiologists
+  - **Application Specialists**: Supporting installation, training, and optimization
+  - **Healthcare IT**: Ensuring integration and compliance with standards
+  - **Developers**: Extending functionality, building integrations, and maintaining APIs  
 
 ---
 
@@ -122,7 +122,7 @@ sequenceDiagram
     Cloud-->>Clinician: Review case, add notes, finalize report
     Cloud->>Clinician: Share link or push to PACS/EHR (as configured)
 ```
-## 👨‍⚕️ Typical clinical workflow
+<h2 id="typical-clinical-workflow">👩‍⚕️ Typical clinical workflow</h2>
 This flowchart shows a typical reporting workflow from login to final report:
 
 ```mermaid
