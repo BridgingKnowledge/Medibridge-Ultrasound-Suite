@@ -138,5 +138,6 @@ flowchart TD
     G --> I[Collaborative notes & AI insights]
     I --> H
 ```
+[⬅️ Back to top](#-mediBridge-documentation-hub)
 
 💡 This fictional system is part of the BridgingKnowledge portfolio, created to showcase how complex medtech solutions can be explained, supported, and optimized for real-world use.
