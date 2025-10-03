@@ -5,10 +5,24 @@ From here you can navigate to all related modules:
 
 ## 🔗 Repositories
 - [About MediBridge](#-about-medibridge-ultrasound-suite)
+- [Purpose](#-purpose)
+  - [Key Features](#-key-features)
+  - [Target Users](#-target-users)
+  - [System Overview](#-system-overview)
+  - [Detailed Architecture](#-detailed-architecture)
+  - [Data Flow](#-data-flow)
+  - [Typical Clinical Workflow](#-typical-clinical-workflow)
+
 - [MediBridge Training](https://github.com/BridgingKnowledge/medibridge-training)
-  - [Clinicians](https://github.com/BridgingKnowledge/medibridge-training-clinicians)
-  - [Specialists](https://github.com/BridgingKnowledge/medibridge-training-specialists)
-  - [Developers](https://github.com/BridgingKnowledge/medibridge-training-developers)
+  - [Purpose](https://github.com/BridgingKnowledge/medibridge-training#-purpose)
+  - [Key Features](https://github.com/BridgingKnowledge/medibridge-training#-key-features)
+  - [Target Users](https://github.com/BridgingKnowledge/medibridge-training#-target-users)
+  - [Training Architecture](https://github.com/BridgingKnowledge/medibridge-training#-training-architecture)
+  - [Typical Training Flow](https://github.com/BridgingKnowledge/medibridge-training#-typical-training-flow)
+  - [Role-specific Training](https://github.com/BridgingKnowledge/medibridge-training#-role-specific-training)
+    - [Clinicians](https://github.com/BridgingKnowledge/medibridge-training-clinicians)
+    - [Specialists](https://github.com/BridgingKnowledge/medibridge-training-specialists)
+    - [Developers](https://github.com/BridgingKnowledge/medibridge-training-developers)
 - [MediBridge Troubleshooting](https://github.com/BridgingKnowledge/medibridge-troubleshooting)
 
 ---
