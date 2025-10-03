@@ -30,7 +30,75 @@ MediBridge was created to:
 - **Clinicians**: Urologists, surgeons, and radiologists  
 - **Application Specialists**: Supporting installation, training, and optimization  
 - **Healthcare IT**: Ensuring integration and compliance with standards  
+- **Developers**: Extending functionality, building integrations, and maintaining APIs  
 
 ---
 
-💡 *This fictional system is part of the BridgingKnowledge portfolio, created to showcase how complex medtech solutions can be explained, supported, and optimized for real-world use.*
+## 🔗 System Overview
+
+```mermaid
+flowchart TD
+    A[Ultrasound Hardware] --> B[Local Software]
+    B --> C[Cloud Application]
+```
+
+```mermaid
+flowchart LR
+    subgraph Onsite[Hospital / OR / Clinic]
+        HW[Ultrasound Hardware<br>Probe array<br>Imaging engine<br>Device console]
+        SW[Local Software<br>Image acquisition<br>AI assist edge<br>Reporting module]
+        PACS[PACS / VNA]
+        EHR[EHR / EMR]
+    end
+
+    subgraph Cloud[Secure Cloud Application]
+        CLOUDAPP[Clinician Portal<br>Case sharing<br>Review & collaboration]
+        AI[AI Analytics<br>Advanced inference<br>Model updates]
+        TRAIN[Training Mode<br>Simulation datasets<br>Guided scenarios]
+        AUDIT[Audit & Logs<br>Access logs<br>Activity trails]
+    end
+
+    HW --> SW
+    SW -- DICOM --> PACS
+    SW -- HL7/FHIR --> EHR
+    SW -- TLS --> CLOUDAPP
+    CLOUDAPP --> AI
+    CLOUDAPP --> TRAIN
+    CLOUDAPP --> AUDIT
+
+    PACS -. secure sync .-> CLOUDAPP
+    EHR -. schedule & orders .-> SW
+```
+```mermaid
+sequenceDiagram
+    participant Clinician
+    participant Hardware as Ultrasound Hardware
+    participant LocalSW as Local Software
+    participant PACS as PACS/VNA
+    participant Cloud as Cloud App
+    participant AI as Cloud AI
+
+    Clinician->>Hardware: Perform scan
+    Hardware->>LocalSW: Stream raw image frames
+    LocalSW->>LocalSW: Edge AI assist (measurements, annotations)
+    LocalSW->>PACS: Store DICOM study
+    LocalSW->>Cloud: Upload case (images + metadata)
+    Cloud->>AI: Request advanced analysis
+    AI-->>Cloud: Findings & confidence scores
+    Cloud-->>Clinician: Review case, add notes, finalize report
+    Cloud->>Clinician: Share link or push to PACS/EHR (as configured)
+```
+```mermaid
+flowchart TD
+    A[Login] --> B[Select patient / order]
+    B --> C[Acquire ultrasound study]
+    C --> D[Edge AI assist\nmeasurements & annotations]
+    D --> E[Create report draft]
+    E --> F{Need specialist review?}
+    F -- Yes --> G[Securely share case in cloud\nrequest review]
+    F -- No --> H[Finalize report\nstore to PACS/EHR]
+    G --> I[Collaborative notes & AI insights]
+    I --> H
+
+```
+
