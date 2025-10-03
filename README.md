@@ -36,12 +36,15 @@ MediBridge was created to:
 
 ## 🔗 System Overview
 
+This section provides a simple high-level overview of the system, showing how the hardware, local software, and cloud application connect:
+
 ```mermaid
 flowchart TD
     A[Ultrasound Hardware] --> B[Local Software]
     B --> C[Cloud Application]
 ```
-
+## 🏥 Detailed Architecture
+This diagram shows how onsite components (hospital/clinic) connect with the secure cloud application:
 ```mermaid
 flowchart LR
     subgraph Onsite[Hospital / OR / Clinic]
@@ -69,6 +72,9 @@ flowchart LR
     PACS -. secure sync .-> CLOUDAPP
     EHR -. schedule & orders .-> SW
 ```
+## 🔄 Data Flow
+This sequence diagram illustrates how data moves from the ultrasound scan to the final report:
+
 ```mermaid
 sequenceDiagram
     participant Clinician
@@ -88,17 +94,20 @@ sequenceDiagram
     Cloud-->>Clinician: Review case, add notes, finalize report
     Cloud->>Clinician: Share link or push to PACS/EHR (as configured)
 ```
+## 👨‍⚕️ Typical Clinical Workflow
+This flowchart shows a typical reporting workflow from login to final report:
+
 ```mermaid
 flowchart TD
     A[Login] --> B[Select patient / order]
     B --> C[Acquire ultrasound study]
-    C --> D[Edge AI assist\nmeasurements & annotations]
+    C --> D[Edge AI assist<br>Measurements & annotations]
     D --> E[Create report draft]
     E --> F{Need specialist review?}
-    F -- Yes --> G[Securely share case in cloud\nrequest review]
-    F -- No --> H[Finalize report\nstore to PACS/EHR]
+    F -- Yes --> G[Securely share case in cloud<br>Request review]
+    F -- No --> H[Finalize report<br>Store to PACS/EHR]
     G --> I[Collaborative notes & AI insights]
     I --> H
-
 ```
 
+💡 This fictional system is part of the BridgingKnowledge portfolio, created to showcase how complex medtech solutions can be explained, supported, and optimized for real-world use.
