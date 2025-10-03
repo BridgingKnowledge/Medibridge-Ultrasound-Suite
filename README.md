@@ -55,6 +55,7 @@ MediBridge was created to:
 ---
 
 <h2 id="target-users">👩‍⚕️ Target users</h2>
+
   - **Clinicians**: Urologists, surgeons, and radiologists
   - **Application Specialists**: Supporting installation, training, and optimization
   - **Healthcare IT**: Ensuring integration and compliance with standards
